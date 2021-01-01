@@ -5,7 +5,7 @@ The `core/converter.py` is the main file, reading it is not too much difficult :
 
 ----------
 # Install requirements
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 # Images locations
 Every **.png** file must placed in `images/colored` directory
 
