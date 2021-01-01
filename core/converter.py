@@ -14,16 +14,6 @@ class Rgb2Grey(object):
         self.grey_dir: str = dirs.get("grey_dir") if dirs.get("grey_dir") else "images/grey"
 
     @staticmethod
-    def __fast_check_file(_f: str) -> str:
-
-        _name: str = _f.replace(os.path.dirname(_f)+"\\","") if os.path.exists(_f) else False
-
-        if not _name:
-            raise FileNotFoundError("File not found, {}".format(_f))
-
-        return _name
-
-    @staticmethod
     def __rgb2grey(_rgb: tuple) -> int:
         Y:float = (0.299 * _rgb[0]) + (0.587 * _rgb[1]) + (0.114 * _rgb[2])
         return int(Y)
@@ -63,11 +53,12 @@ class Rgb2Grey(object):
         f_name: str = file_name.replace(self.__ext, "")
         full_file_path: str = os.path.join(self.colored_dir, f_name+self.__ext)
 
-        png_file: str = self.__fast_check_file(full_file_path) # Checking file exist, and extracting file_name
+        if not os.path.exists(full_file_path):
+            raise FileNotFoundError("File not found, {}".format(full_file_path))
+
         png_rows, png_cols, pixels = self.__decode_data(full_file_path) # Bluid output pixels
 
-        out_file_name: str = png_file.replace(self.__ext, "_grey{}".format(self.__ext))
-        out_file: str = os.path.join(self.grey_dir,out_file_name)
+        out_file: str = os.path.join(self.grey_dir, f_name + self.__ext)
 
         f: IO = open(out_file, "wb")
         w: png.Writer = png.Writer(png_rows, png_cols, greyscale=True)

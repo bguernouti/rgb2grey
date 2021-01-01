@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode/
 
 # Spyder project settings
 .spyderproject
@@ -129,4 +130,3 @@ dmypy.json
 .pyre/
 
 .idea/
-/static/src/js/pdf_print.js
