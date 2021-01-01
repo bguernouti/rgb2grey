@@ -4,12 +4,13 @@ This is simple and quick repo based on ```pypng```, it allow to convert colored 
 The `core/converter.py` contains the main code, reading it ... is not too much complicated :relaxed: :relaxed:
 
 ----------
-# Install requirements
-`pip install -r requirements.txt`
+# Dependencies
+`pip install pypng`
 # Images locations
 Every **.png** file must placed in `images/colored` directory
 
-# Use cases
+# Usage
+
 1. Convert every **.png** files located in `images/colored` dir: 
    - ### `python png2gery.py`
 
