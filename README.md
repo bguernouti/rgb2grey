@@ -24,4 +24,4 @@ Every **.png** file must placed in `images/colored` directory
 
 That's all. :wink: :wink:
 
-If you respect this little efort don't forget to give a **star** as support.
+If you respect this little effort don't forget to give a **star** as support.
