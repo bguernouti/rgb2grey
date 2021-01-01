@@ -3,6 +3,7 @@ This is simple and quick project based on ```pypng```, it allow to convert color
 
 The `core/converter.py` is the main file, reading it is not too much difficult :relaxed: :relaxed:
 
+----------
 # Install requirements
 `pip install requirements.txt`
 # Images locations
@@ -16,6 +17,10 @@ Every **.png** file must placed in `images/colored` directory
 
    - ### `python png2gery.py -f img_name`
    ***note*** : providing ".png" with file name is not mandatory.
+
+# Output files
+### All converted files will be placed in **`images/grey`** folder.
+----------
 
 That's all. :wink: :wink:
 
