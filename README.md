@@ -11,7 +11,7 @@ Every **.png** file must placed in `images/colored` directory
 
 # Use cases
 1. Convert every **.png** files located in `images/colored` dir: 
-   - ### `python png2gery.py -a`
+   - ### `python png2gery.py`
 
 2. Convert single file (also must be located in `images/colored`):
 
