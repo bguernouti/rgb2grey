@@ -1,7 +1,7 @@
 # rgb2grey
-This is simple and quick project based on ```pypng```, it allow to convert colored **".png"** images (rgb or rgba) to grayscale **."png"** (black and white).
+This is simple and quick repo based on ```pypng```, it allow to convert colored **".png"** images (rgb or rgba) to grayscale **."png"** (black and white).
 
-The `core/converter.py` is the main file, reading it is not too much difficult :relaxed: :relaxed:
+The `core/converter.py` contains the main code, reading it ... is not too much complicated :relaxed: :relaxed:
 
 ----------
 # Install requirements
