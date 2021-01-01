@@ -24,5 +24,5 @@ if __name__ == "__main__":
         except :
             raise FileNameNotProvidedError("No file name provided, Usage -f [filename]")
     else :
-        # We ust ignore any other argument, and convert all images
+        # We ignore any other argument, and convert all images
         app.convert_all()        
